@@ -94,7 +94,9 @@ color: crimson;
     color: white;
 }
     
-#Banda{
+#Banda{ background-color:antiquewhite ;
+    color:black ;
+    text-align: center;
 
 }
 
@@ -317,13 +319,11 @@ footer .container{
     #premios ul{
         margin-left: 100px;
     }
-
-@media (min-width: 1200px){
+}
+    @media (min-width: 1200px){
     #premios{
         background-position: calc(100vw-800px);
     }
-}
-
 #Colaboraciones .Colaboraciones{
     display: flex;
     justify-content: center;
@@ -339,19 +339,22 @@ footer .container{
 }
     }
 
-#Video {
-    background-color:firebrick;
-    color: white;
-    text-align: center; 
-    background-image:linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-        ),url("F2.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-}  
-#Video .container{
-    padding: 100px 0px;
-}
+    #Video {
+        background-color:firebrick;
+        color: white;
+        text-align: center; 
+        background-image:linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+            ),url("F2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+    }  
+    #Video .container{
+        padding: 10px 0px;
+    }
+    
+
+    
