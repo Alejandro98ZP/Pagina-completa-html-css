@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    margin: 0;
+}
+
+
+h1{font-size: 3.5em; }
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 40 px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: crimson;
+}
+
+button:hover{
+    background-color: rgb(132, 1, 27);
+}
+
+.container{
+    max-width: 14000px;
+    margin: auto;
+}
+
+.color-acento{color: crimson;}
+
+header{
+    background-color: aliceblue;
+}
+
+header .logo{
+    margin: 0; 
+    padding: 25px 30px;
+    font-weight: bold;
+    color: crimson;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+color: crimson;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),url("EL.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+    
+#Banda{
+
+}
+
+#Banda .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Albumes {
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+}
+
+#Albumes .container{
+    padding: 100px 0px;
+}
+
+#Albumes h2{
+   margin-top: 0;
+}
+
+#Albumes p{
+    display: none;
+}
+
+#Albumes .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(Feel-Good-Inc.jpg);
+    
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(Clint-eastwood.jpg);  
+      
+}
+
+.carta:last-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(DAre1.jpg);
+}
+
+#Premios .container{
+   text-align: center;
+   padding: 200px 12px;
+}
+
+#Premios li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+#Colaboraciones {
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+}
+
+#Colaboraciones .container{
+    padding: 100px 0px;
+}
+
+#Colaboraciones h2{
+   margin-top: 0;
+}
+
+#Colaboraciones p{
+    display: none;
+}
+
+#Colaboraciones .cartaCo{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.cartaCo:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(8.jpg);
+    
+}
+
+.cartaCo:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(Demon-Days.jpg);  
+      
+}
+
+.cartaCo:last-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(Plastic.jpg);
+}
+
+footer{
+    background-color: darkgrey;
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100,100,100);
+    padding: 12px;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width:720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #Banda .container{
+       display: flex;
+       justify-content: space-evenly;
+       
+    }
+
+    #Banda .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+   #Banda h2{
+    margin-top: 0px;
+   }
+
+    #Banda .img-container{
+        background-image: url(humanz.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            width: 400px;
+    }
+
+    #Albumes .Albumes{
+        display: flex;
+        justify-content: center;
+        }
+
+    #Albumes p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Albumes{
+        margin-top: 0;
+    }
+
+    #premios{
+        background-image: url(fondodefi.jpg);
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100w-500px)120px;
+    }
+
+    #premios .container{
+        text-align: initial;
+    }
+
+    #premios ul{
+        margin-left: 100px;
+    }
+
+@media (min-width: 1200px){
+    #premios{
+        background-position: calc(100vw-800px);
+    }
+}
+
+#Colaboraciones .Colaboraciones{
+    display: flex;
+    justify-content: center;
+    }
+
+#Colaboraciones p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#Colaboraciones{
+    margin-top: 0;
+}
+    }
